@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		DDBB44CD21C455DE0003A461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBB44CC21C455DE0003A461 /* AppDelegate.swift */; };
-		DDBB44CF21C455DE0003A461 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBB44CE21C455DE0003A461 /* ViewController.swift */; };
 		DDBB44D221C455DE0003A461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDBB44D021C455DE0003A461 /* Main.storyboard */; };
 		DDBB44D421C455DF0003A461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBB44D321C455DF0003A461 /* Assets.xcassets */; };
 		DDBB44D721C455DF0003A461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDBB44D521C455DF0003A461 /* LaunchScreen.storyboard */; };
 		DDBB44E221C455DF0003A461 /* MoneySavingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBB44E121C455DF0003A461 /* MoneySavingsTests.swift */; };
 		DDBB44ED21C455DF0003A461 /* MoneySavingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBB44EC21C455DF0003A461 /* MoneySavingsUITests.swift */; };
+		DDF680A221C47CD000AF0340 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF680A021C47CD000AF0340 /* Realm.framework */; };
+		DDF680A321C47CD000AF0340 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF680A121C47CD000AF0340 /* RealmSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		DDBB44C921C455DE0003A461 /* MoneySavings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneySavings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBB44CC21C455DE0003A461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DDBB44CE21C455DE0003A461 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DDBB44D121C455DE0003A461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDBB44D321C455DF0003A461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDBB44D621C455DF0003A461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		DDBB44E821C455DF0003A461 /* MoneySavingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneySavingsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBB44EC21C455DF0003A461 /* MoneySavingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneySavingsUITests.swift; sourceTree = "<group>"; };
 		DDBB44EE21C455DF0003A461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDF680A021C47CD000AF0340 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		DDF680A121C47CD000AF0340 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDF680A221C47CD000AF0340 /* Realm.framework in Frameworks */,
+				DDF680A321C47CD000AF0340 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +85,7 @@
 				DDBB44E021C455DF0003A461 /* MoneySavingsTests */,
 				DDBB44EB21C455DF0003A461 /* MoneySavingsUITests */,
 				DDBB44CA21C455DE0003A461 /* Products */,
+				DDF6809F21C47CCF00AF0340 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +103,10 @@
 			isa = PBXGroup;
 			children = (
 				DDBB44CC21C455DE0003A461 /* AppDelegate.swift */,
-				DDBB44CE21C455DE0003A461 /* ViewController.swift */,
-				DDBB44D021C455DE0003A461 /* Main.storyboard */,
-				DDBB44D321C455DF0003A461 /* Assets.xcassets */,
-				DDBB44D521C455DF0003A461 /* LaunchScreen.storyboard */,
 				DDBB44D821C455DF0003A461 /* Info.plist */,
+				DDF680A421C47D9D00AF0340 /* main */,
+				DDF6809C21C47AF400AF0340 /* ui-views */,
+				DDF6809B21C47AE000AF0340 /* ui-icons */,
 			);
 			path = MoneySavings;
 			sourceTree = "<group>";
@@ -125,6 +129,39 @@
 			path = MoneySavingsUITests;
 			sourceTree = "<group>";
 		};
+		DDF6809B21C47AE000AF0340 /* ui-icons */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB44D321C455DF0003A461 /* Assets.xcassets */,
+			);
+			path = "ui-icons";
+			sourceTree = "<group>";
+		};
+		DDF6809C21C47AF400AF0340 /* ui-views */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB44D021C455DE0003A461 /* Main.storyboard */,
+				DDBB44D521C455DF0003A461 /* LaunchScreen.storyboard */,
+			);
+			path = "ui-views";
+			sourceTree = "<group>";
+		};
+		DDF6809F21C47CCF00AF0340 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDF680A021C47CD000AF0340 /* Realm.framework */,
+				DDF680A121C47CD000AF0340 /* RealmSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDF680A421C47D9D00AF0340 /* main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +172,7 @@
 				DDBB44C521C455DE0003A461 /* Sources */,
 				DDBB44C621C455DE0003A461 /* Frameworks */,
 				DDBB44C721C455DE0003A461 /* Resources */,
+				DDF6809E21C47B4000AF0340 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -251,12 +289,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DDF6809E21C47B4000AF0340 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Realm.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DDBB44C521C455DE0003A461 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDBB44CF21C455DE0003A461 /* ViewController.swift in Sources */,
 				DDBB44CD21C455DE0003A461 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,7 +493,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D4Z68CHDQ3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MoneySavings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,8 +507,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielePiergigli.MoneySavings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -449,7 +517,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D4Z68CHDQ3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MoneySavings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,8 +531,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielePiergigli.MoneySavings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
